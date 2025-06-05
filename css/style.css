@@ -1,0 +1,218 @@
+  body{
+    font-family: "PT Sans Caption", sans-serif;
+  }
+  ::selection {
+    background-color: #fec260;
+    color: #352e28;
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  main{
+    min-height: 100vh;
+    background-color: #f7ecde;
+  }
+  main h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+  }
+  main h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+  }
+  main h1:hover::before {
+    height: 50%;
+  }
+
+  .bookmark-body {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+  }
+
+
+  .bookmark-body h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    background-clip: 0.625rem;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+  }
+
+  .btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #318248;
+    --bs-btn-border-color: #3fa75d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #2d7240;
+    --bs-btn-hover-border-color: #2d7240;
+  }
+
+  .btn-delete {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+  }
+  .btn-visit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #B2AC4A;
+    --bs-btn-border-color: #B2AC4A;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8c873a;
+    --bs-btn-hover-border-color: #8c873a;
+  }
+  
+  .btn-update {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #e9803b;
+    --bs-btn-border-color: #e9803b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #c77138;
+    --bs-btn-hover-border-color: #d49064;
+   
+  }
+  table {
+    vertical-align: middle !important;
+  }
+  table span {
+    background-color: rgba(255, 251, 0);
+  }
+  
+  .box-info {
+    background-color: #0007;
+  }
+  
+  .box-conent {
+    width: 500px;
+    z-index: 10;
+  }
+  
+  .box-conent p {
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #352e28;
+  }
+  .content {
+    margin: 20px 0 10px;
+  }
+  .content p {
+    color: #333;
+    font-size: 1rem;
+  }
+  .content .requirement-list {
+    margin-top: 20px;
+  }
+  .requirement-list li {
+    font-size: 0.9rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .requirement-list li i {
+    width: 20px;
+    color: #aaa;
+    font-size: 0.6rem;
+  }
+  .requirement-list li.valid i {
+    font-size: 1rem;
+    color: #4285f4;
+  }
+  .requirement-list li span {
+    margin-left: 12px;
+    color: #333;
+  }
+  .requirement-list li.valid span {
+    color: #999;
+  }
+  
+  .content .requirements-list {
+    margin-top: 20px;
+  }
+  .requirements-list li {
+    font-size: 0.9rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .requirements-list li i {
+    width: 20px;
+    color: #aaa;
+    font-size: 0.6rem;
+  }
+  .requirements-list li.valid i {
+    font-size: 1rem;
+    color: #4285f4;
+  }
+  .requirements-list li span {
+    margin-left: 12px;
+    color: #333;
+  }
+  .requirements-list li.valid span {
+    color: #999;
+  }
+  @media screen and (max-width: 768px) {
+   
+    .content p {
+      font-size: 1.15rem;
+    }
+   
+    .requirement-list li {
+      font-size: 1.1rem;
+    }
+    .requirement-list li span {
+      margin-left: 7px;
+    }
+  
+    .requirements-list li {
+      font-size: 1.1rem;
+    }
+    .requirements-list li span {
+      margin-left: 7px;
+    }
+    .btn-visit {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+      width: 100%;
+    }
+    
+    .btn-delete, .btn-update2 {
+      margin-bottom: 0.5rem;
+      width: 100%;
+    }
+
+    .btn-visit, .btn-update {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      white-space: nowrap;
+  }
+    .table td, .table th {
+      padding: 0.5rem;
+    }
+  }
+  
