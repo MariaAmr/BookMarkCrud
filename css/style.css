@@ -32,14 +32,11 @@
   main h1:hover::before {
     height: 50%;
   }
-
   .bookmark-body {
     border-width: 2px 0 2px 0;
     border-style: dotted;
     border-color: #352e28;
   }
-
-
   .bookmark-body h2 {
     font-family: "Righteous", cursive;
     font-size: 25px;
@@ -48,7 +45,6 @@
     background-clip: 0.625rem;
     -webkit-text-fill-color: transparent;
   }
-  
   .form-control:focus {
     color: #212529;
     background-color: #fff;
@@ -56,7 +52,6 @@
     outline: 0;
     box-shadow: 0 0 0 0.25rem #fec26055;
   }
-
   .btn-submit {
     --bs-btn-color: #fff;
     --bs-btn-bg: #318248;
@@ -65,7 +60,6 @@
     --bs-btn-hover-bg: #2d7240;
     --bs-btn-hover-border-color: #2d7240;
   }
-
   .btn-delete {
     --bs-btn-color: #fff;
     --bs-btn-bg: #eb1d36;
@@ -82,7 +76,6 @@
     --bs-btn-hover-bg: #8c873a;
     --bs-btn-hover-border-color: #8c873a;
   }
-  
   .btn-update {
     --bs-btn-color: #fff;
     --bs-btn-bg: #e9803b;
@@ -98,16 +91,13 @@
   table span {
     background-color: rgba(255, 251, 0);
   }
-  
   .box-info {
     background-color: #0007;
   }
-  
   .box-conent {
     width: 500px;
     z-index: 10;
   }
-  
   .box-conent p {
     font-family: "Bree Serif", serif;
     font-size: 21px;
@@ -174,12 +164,16 @@
   .requirements-list li.valid span {
     color: #999;
   }
+  @media screen and (max-width: 576px) {
+    .table {
+        font-size: 0.9rem; 
+    }
+  }
   @media screen and (max-width: 768px) {
    
     .content p {
       font-size: 1.15rem;
     }
-   
     .requirement-list li {
       font-size: 1.1rem;
     }
@@ -198,19 +192,20 @@
       font-size: 0.875rem;
       width: 100%;
     }
-    
     .btn-delete, .btn-update2 {
       margin-bottom: 0.5rem;
       width: 100%;
     }
-
+    .bookmark-body h2{
+      font-size: 18px;
+    }
     .btn-visit, .btn-update {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0.25rem;
       white-space: nowrap;
-  }
+      gap: 0.1rem;
+    }
     .table td, .table th {
       padding: 0.5rem;
     }

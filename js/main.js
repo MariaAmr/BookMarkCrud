@@ -124,7 +124,6 @@ function addBookMark(){
 
     bookMarks.push(siteObj);
     localStorage.setItem('bookMarker',JSON.stringify(bookMarks));
-    console.log(bookMarks);
     clearInputs();
     displaySites();
 
